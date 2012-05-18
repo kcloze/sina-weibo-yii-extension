@@ -1,0 +1,5 @@
+1.申请app key
+
+2.文件放到相应的extensions和controlers目录下
+
+3.修改/extensions/sinaWeibo/config文件，填写自己申请的app key和回调地址(对应weiboController->actionCallback路径)
