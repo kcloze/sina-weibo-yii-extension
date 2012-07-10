@@ -8,7 +8,7 @@ class WeiboController extends Controller
 		$weiboService=new SinaWeibo(WB_AKEY, WB_SKEY);
 		$code_url = $weiboService->getAuthorizeURL( WB_CALLBACK_URL );
 		$_SESSION['back_url']=$this->createUrl('weibolist');
-		echo '<a href="'.$code_url.'">授权</a>';
+		echo '<a href="'.$code_url.'">点击授权</a>';
 		
 	}
 	public function actionCallback(){
